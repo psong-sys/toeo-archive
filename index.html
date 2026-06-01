@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home · TOEO Asset Wiki</title>
+<link rel="stylesheet" href="static/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="top-nav">
+  <a class="brand" href="index.html" aria-label="Tales of Eternia Online archive home">
+    <img class="brand-logo" src="static/toeo-logo.webp" alt="Tales of Eternia Online" width="178" height="50">
+  </a>
+  <nav class="nav-links">
+      <a class="active" href="./index.html">Home</a>
+      <a class="" href="./equipment/index.html">Equipment</a>
+      <a class="" href="./beasts/index.html">Beasts</a>
+      <a class="" href="./npcs/index.html">NPCs</a>
+      <a class="" href="./actions/index.html">Battle Actions</a>
+      <a class="" href="./zones/index.html">Zones</a>
+      <a class="" href="./audio/index.html">Audio</a>
+      <a class="" href="./bundles/index.html">Bundles</a>
+      <a class="" href="./about.html">About</a>
+  </nav>
+  <div class="search-wrap">
+    <button class="search-top" type="button" onclick="openPalette()" aria-label="Open search">
+      <span>Search archive</span><kbd>Ctrl K</kbd>
+    </button>
+  </div>
+</header>
+<div class="site-shell">
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-kicker">Recovered client index</div>
+      <details class="side-group" open>
+        <summary>Archive</summary>
+        <div class="side-links">
+          <a class="active" href="./index.html" data-palette-item="Home" data-search="Home archive section">Home</a>
+        </div>
+      </details>
+      <details class="side-group" open>
+        <summary>Catalogs</summary>
+        <div class="side-links">
+          <a class="" href="./equipment/index.html" data-palette-item="Equipment" data-search="Equipment archive section">Equipment</a><a class="" href="./beasts/index.html" data-palette-item="Beasts" data-search="Beasts archive section">Beasts</a><a class="" href="./npcs/index.html" data-palette-item="NPCs" data-search="NPCs archive section">NPCs</a><a class="" href="./actions/index.html" data-palette-item="Battle Actions" data-search="Battle Actions archive section">Battle Actions</a>
+        </div>
+      </details>
+      <details class="side-group" open>
+        <summary>Preservation</summary>
+        <div class="side-links">
+          <a class="" href="./zones/index.html" data-palette-item="Zones" data-search="Zones archive section">Zones</a><a class="" href="./audio/index.html" data-palette-item="Audio" data-search="Audio archive section">Audio</a><a class="" href="./bundles/index.html" data-palette-item="Bundles" data-search="Bundles archive section">Bundles</a>
+        </div>
+      </details>
+      <details class="side-group" open>
+        <summary>Project</summary>
+        <div class="side-links">
+          <a class="" href="./about.html" data-palette-item="About" data-search="About archive section">About</a>
+        </div>
+      </details>
+    </div>
+  </aside>
+  <main class="main">
+    <div class="breadcrumb"><a href="index.html">Archive</a><span>/</span><span>Home</span></div>
+
+<section class="hero archive-hero">
+  <div class="hero-copy">
+    <div class="subtitle">Reverse-engineered MMO preservation archive</div>
+    <h1>Tales of Eternia Online</h1>
+    <p class="lede">An offline-extracted reference for Namco's discontinued MMO: equipment, enemy classes, NPC atlases, battle-action scripts, maps, audio, and container-format research preserved from the original client.</p>
+  </div>
+  <div class="hero-ledger" aria-label="Archive status">
+    <span class="ledger-label">Recovered corpus</span>
+    <strong>7 decoded container families</strong>
+    <span>BNKD / IDTB / ICND / TDAB / CRSD / NNTB / ATDT</span>
+  </div>
+</section>
+
+
+<div class="hero-parade" aria-hidden="true">
+  <div class="hero-parade-track">
+      <div class="sprite" title="NN001"><img src="static/sprites/nn/NN001.png" alt="NN001" loading="lazy"></div>
+      <div class="sprite" title="NN019"><img src="static/sprites/nn/NN019.png" alt="NN019" loading="lazy"></div>
+      <div class="sprite" title="NN037"><img src="static/sprites/nn/NN037.png" alt="NN037" loading="lazy"></div>
+      <div class="sprite" title="NN055A"><img src="static/sprites/nn/NN055A.png" alt="NN055A" loading="lazy"></div>
+      <div class="sprite" title="NN068"><img src="static/sprites/nn/NN068.png" alt="NN068" loading="lazy"></div>
+      <div class="sprite" title="NN086"><img src="static/sprites/nn/NN086.png" alt="NN086" loading="lazy"></div>
+      <div class="sprite" title="NN105"><img src="static/sprites/nn/NN105.png" alt="NN105" loading="lazy"></div>
+      <div class="sprite" title="NN127"><img src="static/sprites/nn/NN127.png" alt="NN127" loading="lazy"></div>
+      <div class="sprite" title="NN152"><img src="static/sprites/nn/NN152.png" alt="NN152" loading="lazy"></div>
+      <div class="sprite" title="NN171"><img src="static/sprites/nn/NN171.png" alt="NN171" loading="lazy"></div>
+      <div class="sprite" title="NM001"><img src="static/sprites/nm/NM001.png" alt="NM001" loading="lazy"></div>
+      <div class="sprite" title="NM009"><img src="static/sprites/nm/NM009.png" alt="NM009" loading="lazy"></div>
+      <div class="sprite" title="NM015"><img src="static/sprites/nm/NM015.png" alt="NM015" loading="lazy"></div>
+      <div class="sprite" title="NM024"><img src="static/sprites/nm/NM024.png" alt="NM024" loading="lazy"></div>
+      <div class="sprite" title="NM030"><img src="static/sprites/nm/NM030.png" alt="NM030" loading="lazy"></div>
+      <div class="sprite" title="NM041"><img src="static/sprites/nm/NM041.png" alt="NM041" loading="lazy"></div>
+      <div class="sprite" title="NM047"><img src="static/sprites/nm/NM047.png" alt="NM047" loading="lazy"></div>
+      <div class="sprite" title="NM051C"><img src="static/sprites/nm/NM051C.png" alt="NM051C" loading="lazy"></div>
+      <div class="sprite" title="NM067"><img src="static/sprites/nm/NM067.png" alt="NM067" loading="lazy"></div>
+      <div class="sprite" title="E000"><img src="static/sprites/e/E000.png" alt="E000" loading="lazy"></div>
+      <div class="sprite" title="E014"><img src="static/sprites/e/E014.png" alt="E014" loading="lazy"></div>
+      <div class="sprite" title="E029"><img src="static/sprites/e/E029.png" alt="E029" loading="lazy"></div>
+      <div class="sprite" title="E044"><img src="static/sprites/e/E044.png" alt="E044" loading="lazy"></div>
+      <div class="sprite" title="E068"><img src="static/sprites/e/E068.png" alt="E068" loading="lazy"></div>
+      <div class="sprite" title="E082"><img src="static/sprites/e/E082.png" alt="E082" loading="lazy"></div>
+      <div class="sprite" title="E114"><img src="static/sprites/e/E114.png" alt="E114" loading="lazy"></div>
+      <div class="sprite" title="E130"><img src="static/sprites/e/E130.png" alt="E130" loading="lazy"></div>
+      <div class="sprite" title="E149"><img src="static/sprites/e/E149.png" alt="E149" loading="lazy"></div>
+      <div class="sprite" title="E164"><img src="static/sprites/e/E164.png" alt="E164" loading="lazy"></div>
+      <div class="sprite" title="E188"><img src="static/sprites/e/E188.png" alt="E188" loading="lazy"></div>
+      <div class="sprite" title="E209"><img src="static/sprites/e/E209.png" alt="E209" loading="lazy"></div>
+      <div class="sprite" title="E244"><img src="static/sprites/e/E244.png" alt="E244" loading="lazy"></div>
+      <div class="sprite" title="NE001"><img src="static/sprites/ne/NE001.png" alt="NE001" loading="lazy"></div>
+      <div class="sprite" title="NE003"><img src="static/sprites/ne/NE003.png" alt="NE003" loading="lazy"></div>
+      <div class="sprite" title="NN001"><img src="static/sprites/nn/NN001.png" alt="NN001" loading="lazy"></div>
+      <div class="sprite" title="NN019"><img src="static/sprites/nn/NN019.png" alt="NN019" loading="lazy"></div>
+      <div class="sprite" title="NN037"><img src="static/sprites/nn/NN037.png" alt="NN037" loading="lazy"></div>
+      <div class="sprite" title="NN055A"><img src="static/sprites/nn/NN055A.png" alt="NN055A" loading="lazy"></div>
+      <div class="sprite" title="NN068"><img src="static/sprites/nn/NN068.png" alt="NN068" loading="lazy"></div>
+      <div class="sprite" title="NN086"><img src="static/sprites/nn/NN086.png" alt="NN086" loading="lazy"></div>
+      <div class="sprite" title="NN105"><img src="static/sprites/nn/NN105.png" alt="NN105" loading="lazy"></div>
+      <div class="sprite" title="NN127"><img src="static/sprites/nn/NN127.png" alt="NN127" loading="lazy"></div>
+      <div class="sprite" title="NN152"><img src="static/sprites/nn/NN152.png" alt="NN152" loading="lazy"></div>
+      <div class="sprite" title="NN171"><img src="static/sprites/nn/NN171.png" alt="NN171" loading="lazy"></div>
+      <div class="sprite" title="NM001"><img src="static/sprites/nm/NM001.png" alt="NM001" loading="lazy"></div>
+      <div class="sprite" title="NM009"><img src="static/sprites/nm/NM009.png" alt="NM009" loading="lazy"></div>
+      <div class="sprite" title="NM015"><img src="static/sprites/nm/NM015.png" alt="NM015" loading="lazy"></div>
+      <div class="sprite" title="NM024"><img src="static/sprites/nm/NM024.png" alt="NM024" loading="lazy"></div>
+      <div class="sprite" title="NM030"><img src="static/sprites/nm/NM030.png" alt="NM030" loading="lazy"></div>
+      <div class="sprite" title="NM041"><img src="static/sprites/nm/NM041.png" alt="NM041" loading="lazy"></div>
+      <div class="sprite" title="NM047"><img src="static/sprites/nm/NM047.png" alt="NM047" loading="lazy"></div>
+      <div class="sprite" title="NM051C"><img src="static/sprites/nm/NM051C.png" alt="NM051C" loading="lazy"></div>
+      <div class="sprite" title="NM067"><img src="static/sprites/nm/NM067.png" alt="NM067" loading="lazy"></div>
+      <div class="sprite" title="E000"><img src="static/sprites/e/E000.png" alt="E000" loading="lazy"></div>
+      <div class="sprite" title="E014"><img src="static/sprites/e/E014.png" alt="E014" loading="lazy"></div>
+      <div class="sprite" title="E029"><img src="static/sprites/e/E029.png" alt="E029" loading="lazy"></div>
+      <div class="sprite" title="E044"><img src="static/sprites/e/E044.png" alt="E044" loading="lazy"></div>
+      <div class="sprite" title="E068"><img src="static/sprites/e/E068.png" alt="E068" loading="lazy"></div>
+      <div class="sprite" title="E082"><img src="static/sprites/e/E082.png" alt="E082" loading="lazy"></div>
+      <div class="sprite" title="E114"><img src="static/sprites/e/E114.png" alt="E114" loading="lazy"></div>
+      <div class="sprite" title="E130"><img src="static/sprites/e/E130.png" alt="E130" loading="lazy"></div>
+      <div class="sprite" title="E149"><img src="static/sprites/e/E149.png" alt="E149" loading="lazy"></div>
+      <div class="sprite" title="E164"><img src="static/sprites/e/E164.png" alt="E164" loading="lazy"></div>
+      <div class="sprite" title="E188"><img src="static/sprites/e/E188.png" alt="E188" loading="lazy"></div>
+      <div class="sprite" title="E209"><img src="static/sprites/e/E209.png" alt="E209" loading="lazy"></div>
+      <div class="sprite" title="E244"><img src="static/sprites/e/E244.png" alt="E244" loading="lazy"></div>
+      <div class="sprite" title="NE001"><img src="static/sprites/ne/NE001.png" alt="NE001" loading="lazy"></div>
+      <div class="sprite" title="NE003"><img src="static/sprites/ne/NE003.png" alt="NE003" loading="lazy"></div>
+  </div>
+</div>
+
+<div class="stat-grid">
+  <div class="stat"><span class="num">3,125</span><span class="label">Item icons</span></div>
+  <div class="stat"><span class="num">2,722</span><span class="label">Equipment IDs</span></div>
+  <div class="stat"><span class="num">4,805</span><span class="label">Enemy classes</span></div>
+  <div class="stat"><span class="num">180</span><span class="label">NPC entries</span></div>
+  <div class="stat"><span class="num">1,668</span><span class="label">Battle actions</span></div>
+  <div class="stat"><span class="num">6,779</span><span class="label">Action parts</span></div>
+  <div class="stat"><span class="num">27,498</span><span class="label">Texture atlases</span></div>
+  <div class="stat"><span class="num">50</span><span class="label">Zones with minimaps</span></div>
+  <div class="stat"><span class="num">7</span><span class="label">Container formats RE'd</span></div>
+</div>
+
+<h2>Browse the archive</h2>
+
+<div class="cat-grid">
+  <a class="cat-card" href="equipment/index.html" data-search="equipment sword hat shield body gloves boots accessory symbolic ids icons">
+    <span class="name">Equipment</span>
+    <div class="meta">2,722 symbolic IDs · 24 categories<br>Sword, Hat, Shield, Body, Gloves, Boots, Accessory…</div>
+  </a>
+  <a class="cat-card" href="beasts/index.html" data-search="beasts enemies monsters behavior taxonomy slime dragon mimic elemental">
+    <span class="name">Beasts</span>
+    <div class="meta">4,805 enemy classes · 26-class behavior taxonomy<br>SLIME, DRAGON, MIMIC, ELEMENTAL, …</div>
+  </a>
+  <a class="cat-card" href="npcs/index.html" data-search="npcs nn family townfolk vendors quest-givers sprites">
+    <span class="name">NPCs</span>
+    <div class="meta">180 NPC entries · NN family<br>Townfolk, vendors, quest-givers</div>
+  </a>
+  <a class="cat-card" href="actions/index.html" data-search="battle actions tdab animation sound effects movement scripts timelines">
+    <span class="name">Battle Actions</span>
+    <div class="meta">1,668 actions · 6,779 parts<br>Animation tracks, sound triggers, effect refs</div>
+  </a>
+  <a class="cat-card" href="zones/index.html" data-search="zones maps minimaps rasheans mints barole inferia dungeons">
+    <span class="name">Zones</span>
+    <div class="meta">50 main maps · 93 minimap cells<br>Rasheans, Mints, Barole, Inferia field, dungeons…</div>
+  </a>
+  <a class="cat-card" href="audio/index.html" data-search="audio music sound effects environmentals tracks">
+    <span class="name">Audio</span>
+    <div class="meta">Music · sound effects · environmentals<br>Track names that double as zone-name index</div>
+  </a>
+  <a class="cat-card" href="bundles/index.html" data-search="asset bundles crsd nntb registrations resource aliases atd cpd">
+    <span class="name">Asset Bundles</span>
+    <div class="meta">460 entity registrations · CRSD<br>id → name → .atd / .cpd resource files</div>
+  </a>
+</div>
+
+<h2>About this archive</h2>
+
+<div class="note">
+  <strong>Structural archive of what shipped in the recovered client.</strong> Seven container formats fully decoded, every static asset surfaced. <em>Combat numerics</em> (HP, levels, damage, drops, XP) have not been found in the recovered client corpus and were likely server-authoritative on Sigma's now-dark servers. See <a href="about.html">About</a> for the full breakdown of what's recoverable and why.
+</div>
+
+<table class="data">
+  <thead><tr><th>Container</th><th>Files</th><th>Status</th><th>What it gave us</th></tr></thead>
+  <tbody>
+    <tr><td>BNKD</td><td class="mono">2789</td><td>✅ end-to-end</td><td>27 498 texture PNGs (NPC bodies, environments, atlases)</td></tr>
+    <tr><td>IDTB</td><td class="mono">2</td><td>✅ end-to-end</td><td>Symbolic-name registries for everything</td></tr>
+    <tr><td>ICND</td><td class="mono">1</td><td>✅ end-to-end</td><td>3 125 64×64 item icons in 34 categories</td></tr>
+    <tr><td>TDAB</td><td class="mono">1</td><td>✅ end-to-end</td><td>1 668 battle-action scripts (anim+sound+effect+move)</td></tr>
+    <tr><td>CRSD</td><td class="mono">1</td><td>✅ end-to-end</td><td>460-row character / asset registry: id → symbolic name → <code>.atd</code> + <code>.cpd</code> filenames + type code</td></tr>
+    <tr><td>NNTB</td><td class="mono">1</td><td>✅ end-to-end</td><td>290-entry resource-alias map (5 zone-mark variants share one bundle)</td></tr>
+    <tr><td>MAPI / MAPD</td><td class="mono">312</td><td>✅ minimap atlases extracted</td><td>50 main maps · 93 minimap cells rendered as PNGs</td></tr>
+    <tr><td>ATDT/PKDF/CPDT</td><td class="mono">990</td><td>✅ format decoded</td><td>Content-hash manifests (negative result — no stats data)</td></tr>
+    <tr><td>SMS2</td><td class="mono">3</td><td>🟡 untouched (optional)</td><td><span class="dim">Japanese item / skill name strings — translator exists in main-arc</span></td></tr>
+    <tr><td>AMD</td><td class="mono">28</td><td>❌ untouched</td><td><span class="dim">Smallest sibling-bundle group — completionist target</span></td></tr>
+  </tbody>
+</table>
+
+    <footer class="site">
+      <p>Reverse-engineered asset archive of <em>Tales of Eternia Online</em> (Namco / Sigma, 2003-2007). Static structural data extracted from the recovered client; no copyrighted asset binaries are redistributed here. Numeric gameplay values (HP, levels, drops, XP) have not been confirmed in the recovered client corpus and were likely server-authoritative.</p>
+      <p class="small muted">Generated by <code>build_wiki.py</code> · 7 container formats decoded: BNKD · IDTB · ICND · TDAB · CRSD · NNTB · ATDT/PKDF/CPDT</p>
+    </footer>
+  </main>
+</div>
+<div class="palette-backdrop" id="paletteBackdrop" hidden onclick="closePalette()"></div>
+<section class="command-palette" id="commandPalette" hidden aria-label="Archive search">
+  <div class="palette-panel">
+    <div class="palette-field">
+      <span class="palette-icon">⌕</span>
+      <input id="paletteInput" type="search" placeholder="Search current page and archive sections..." autocomplete="off" oninput="paletteSearch(this.value)">
+      <button type="button" onclick="closePalette()" aria-label="Close search">Esc</button>
+    </div>
+    <div class="palette-results" id="paletteResults"></div>
+  </div>
+</section>
+<div class="image-viewer" id="imageViewer" hidden onclick="closeImageViewer()">
+  <figure class="image-viewer-panel" onclick="event.stopPropagation()">
+    <button class="image-viewer-close" type="button" onclick="closeImageViewer()" aria-label="Close image preview">Esc</button>
+    <img id="imageViewerImg" alt="">
+    <figcaption id="imageViewerCaption"></figcaption>
+  </figure>
+</div>
+<script>
+const archiveLinks = [{"href": "./index.html", "label": "Home"}, {"href": "./equipment/index.html", "label": "Equipment"}, {"href": "./beasts/index.html", "label": "Beasts"}, {"href": "./npcs/index.html", "label": "NPCs"}, {"href": "./actions/index.html", "label": "Battle Actions"}, {"href": "./zones/index.html", "label": "Zones"}, {"href": "./audio/index.html", "label": "Audio"}, {"href": "./bundles/index.html", "label": "Bundles"}, {"href": "./about.html", "label": "About"}];
+
+function globalSearch(q) {
+  q = q.trim().toLowerCase();
+  const targets = document.querySelectorAll('[data-search], [data-name], [data-id]');
+  for (const t of targets) {
+    const haystack = (t.dataset.search || t.dataset.name || '' + (t.dataset.id || '') || t.textContent || '').toLowerCase();
+    t.style.display = (!q || haystack.includes(q)) ? '' : 'none';
+  }
+}
+
+function openPalette() {
+  document.getElementById('paletteBackdrop').hidden = false;
+  document.getElementById('commandPalette').hidden = false;
+  const input = document.getElementById('paletteInput');
+  input.value = '';
+  paletteSearch('');
+  input.focus();
+}
+
+function closePalette() {
+  document.getElementById('paletteBackdrop').hidden = true;
+  document.getElementById('commandPalette').hidden = true;
+}
+
+function paletteSearch(q) {
+  q = q.trim().toLowerCase();
+  globalSearch(q);
+  const pageItems = Array.from(document.querySelectorAll('.cat-card, .npc-card, .icon-cell, .action-card, .zone-card, .audio-cell'))
+    .map((el) => {
+      const title = (el.querySelector('.name, .npc-name, .id, .zone-id, .a-name') || el).textContent.trim();
+      const meta = (el.querySelector('.meta, .npc-id, .zone-group, .a-sub') || { textContent: '' }).textContent.trim();
+      const text = (el.dataset.search || el.dataset.name || el.textContent || '').trim();
+      return { title, meta, text };
+    })
+    .filter((item) => !q || item.text.toLowerCase().includes(q))
+    .slice(0, 6);
+  const linkItems = archiveLinks
+    .filter((item) => !q || item.label.toLowerCase().includes(q))
+    .map((item) => `<a class="palette-result" href="${item.href}"><span>${item.label}</span><small>Archive section</small></a>`);
+  const localItems = pageItems
+    .map((item) => `<button class="palette-result" type="button" onclick="closePalette()"><span>${item.title}</span><small>${item.meta || 'Current page match'}</small></button>`);
+  document.getElementById('paletteResults').innerHTML = [...linkItems, ...localItems].join('') || '<div class="palette-empty">No matches in this page.</div>';
+}
+
+function openImageViewer(img) {
+  const viewer = document.getElementById('imageViewer');
+  const viewerImg = document.getElementById('imageViewerImg');
+  const caption = document.getElementById('imageViewerCaption');
+  const cell = img.closest('.icon-cell, .npc-card');
+  const label = cell ? (cell.querySelector('.name, .npc-name, .id') || cell).textContent.trim() : (img.alt || 'Asset preview');
+  const source = cell ? cell.querySelector('.asset-source')?.textContent.trim() : '';
+  viewerImg.src = img.currentSrc || img.src;
+  viewerImg.alt = img.alt || label;
+  caption.textContent = source ? `${label} · ${source}` : label;
+  viewer.hidden = false;
+  document.body.classList.add('viewer-open');
+}
+
+function closeImageViewer() {
+  const viewer = document.getElementById('imageViewer');
+  const viewerImg = document.getElementById('imageViewerImg');
+  viewer.hidden = true;
+  viewerImg.removeAttribute('src');
+  document.body.classList.remove('viewer-open');
+}
+
+document.addEventListener('click', (ev) => {
+  const img = ev.target.closest('.icon-cell img, .npc-card img');
+  if (!img || !img.getAttribute('src')) return;
+  ev.preventDefault();
+  openImageViewer(img);
+});
+
+document.addEventListener('keydown', (ev) => {
+  if ((ev.ctrlKey || ev.metaKey) && ev.key.toLowerCase() === 'k') {
+    ev.preventDefault();
+    openPalette();
+  }
+  if (ev.key === 'Escape') {
+    closePalette();
+    closeImageViewer();
+  }
+});
+</script>
+</body>
+</html>
