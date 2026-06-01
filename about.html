@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About · TOEO Asset Wiki</title>
+<link rel="stylesheet" href="static/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="top-nav">
+  <a class="brand" href="index.html" aria-label="Tales of Eternia Online archive home">
+    <img class="brand-logo" src="static/toeo-logo.webp" alt="Tales of Eternia Online" width="178" height="50">
+  </a>
+  <nav class="nav-links">
+      <a class="" href="./index.html">Home</a>
+      <a class="" href="./equipment/index.html">Equipment</a>
+      <a class="" href="./beasts/index.html">Beasts</a>
+      <a class="" href="./npcs/index.html">NPCs</a>
+      <a class="" href="./actions/index.html">Battle Actions</a>
+      <a class="" href="./zones/index.html">Zones</a>
+      <a class="" href="./audio/index.html">Audio</a>
+      <a class="" href="./bundles/index.html">Bundles</a>
+      <a class="active" href="./about.html">About</a>
+  </nav>
+  <div class="search-wrap">
+    <button class="search-top" type="button" onclick="openPalette()" aria-label="Open search">
+      <span>Search archive</span><kbd>Ctrl K</kbd>
+    </button>
+  </div>
+</header>
+<div class="site-shell">
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-kicker">Recovered client index</div>
+      <details class="side-group" open>
+        <summary>Archive</summary>
+        <div class="side-links">
+          <a class="" href="./index.html" data-palette-item="Home" data-search="Home archive section">Home</a>
+        </div>
+      </details>
+      <details class="side-group" open>
+        <summary>Catalogs</summary>
+        <div class="side-links">
+          <a class="" href="./equipment/index.html" data-palette-item="Equipment" data-search="Equipment archive section">Equipment</a><a class="" href="./beasts/index.html" data-palette-item="Beasts" data-search="Beasts archive section">Beasts</a><a class="" href="./npcs/index.html" data-palette-item="NPCs" data-search="NPCs archive section">NPCs</a><a class="" href="./actions/index.html" data-palette-item="Battle Actions" data-search="Battle Actions archive section">Battle Actions</a>
+        </div>
+      </details>
+      <details class="side-group" open>
+        <summary>Preservation</summary>
+        <div class="side-links">
+          <a class="" href="./zones/index.html" data-palette-item="Zones" data-search="Zones archive section">Zones</a><a class="" href="./audio/index.html" data-palette-item="Audio" data-search="Audio archive section">Audio</a><a class="" href="./bundles/index.html" data-palette-item="Bundles" data-search="Bundles archive section">Bundles</a>
+        </div>
+      </details>
+      <details class="side-group" open>
+        <summary>Project</summary>
+        <div class="side-links">
+          <a class="active" href="./about.html" data-palette-item="About" data-search="About archive section">About</a>
+        </div>
+      </details>
+    </div>
+  </aside>
+  <main class="main">
+    <div class="breadcrumb"><a href="index.html">Archive</a><span>/</span><span>About</span></div>
+
+<h1>About this archive</h1>
+
+<p class="lede">
+A static reference for the assets that shipped in <em>Tales of Eternia Online</em>'s PC client. The MMO ran 2003–2007 in Japan, operated by Namco's MMO partner ISAO Corporation. Servers are dark, but the client's asset binaries yield to careful reverse engineering — every container format used by the engine has now been decoded, and what's here is the complete <strong>structural archive</strong> of what the client carried.
+</p>
+
+<h2>What this archive contains</h2>
+<ul>
+  <li><strong>Equipment</strong> — 2 722 symbolic IDs across 24 categories, joined to icon thumbnails where authored</li>
+  <li><strong>Beasts</strong> — 4 804 enemy slots (155 with authored sprite atlases) plus 26 behavior taxonomy classes and the named-entity bosses</li>
+  <li><strong>NPCs</strong> — 180 NPCs (NN family) with 8-directional sprite atlases, plus 54 neighbour-models</li>
+  <li><strong>Battle Actions</strong> — 1 668 frame-by-frame combat scripts (anim / sound / effect / movement timelines)</li>
+  <li><strong>Zones</strong> — 50 main maps plus 93 minimap cells, 256×256 PNGs extracted from the client's map bundles</li>
+  <li><strong>Asset Bundles</strong> — 460-row character/asset registry: id → name → <code>.atd</code> + <code>.cpd</code> resource files; plus 5 zone-mark resource aliases</li>
+</ul>
+
+<h2>What this archive does NOT contain — and why</h2>
+
+<p>The most-asked question for a game wiki is "how much HP does this monster have?" The honest answer is: <strong>we have not found confirmed authoritative stat or drop tables in the recovered client corpus</strong>. TOEO was an MMO, so values such as HP, damage, EXP, drops, and reward logic were likely controlled by the live server rather than stored as static client assets.</p>
+
+<table class="data" style="max-width: 56em">
+  <thead><tr><th>Data category</th><th>Where it lived</th><th>Recoverable?</th></tr></thead>
+  <tbody>
+    <tr><td>Models, textures, animations, UI, sounds</td><td>On the disc / patcher</td><td>✅ Recovered (this archive)</td></tr>
+    <tr><td>Symbolic names, item icons, asset registry</td><td>Patched in post-launch (<code>cid0.idt</code>, <code>crsid.crs</code>, <code>icon_item.icd</code>, …)</td><td>✅ Recovered (this archive)</td></tr>
+    <tr><td>Map geometry, zone identity</td><td>On the disc (<code>.mpi</code> / <code>.mpd</code> / minimap <code>.bnd</code>)</td><td>✅ Recovered (this archive)</td></tr>
+    <tr><td>Mob HP / level / damage formulas</td><td>Sigma's authoritative servers</td><td>❌ Lost when servers shut down 2007</td></tr>
+    <tr><td>Drop tables / shop tables / XP curves</td><td>Sigma's authoritative servers</td><td>❌ Lost when servers shut down 2007</td></tr>
+    <tr><td>Spawn locations / aggro ranges / behavior parameters</td><td>Sigma's authoritative servers</td><td>❌ Lost when servers shut down 2007</td></tr>
+    <tr><td>Localized English item / skill / monster names</td><td>JP-only game; English wiki names are inferred from Tales franchise lore where applicable</td><td>⚠️ Partial — cross-referenced from <em>Tales of Eternia</em> canon</td></tr>
+  </tbody>
+</table>
+
+<p>This is the universal structural property of MMO archaeology: live-server numbers die with the servers. The client only ever held the <em>presentation</em> layer; combat math, drop chances, and progression curves were computed server-side as an anti-cheat necessity. We checked the launch-day ISO, the post-patch installed tree, the patcher infrastructure URLs (<code>patch.toeo.jp</code>, no Wayback Machine snapshots), and the publisher's hosting partner records — confirmed: no source remains.</p>
+
+<h2>Container formats decoded</h2>
+<p>Seven formal container families and one shared engine library, all RE'd from the original client:</p>
+<ul>
+  <li><strong>BNKD</strong> — texture bundles. 2 789 files → 27 498 PNGs via Namco's LzComp2 + A1R5G5B5 / palette8 pipeline.</li>
+  <li><strong>IDTB</strong> — symbolic-ID dictionary. <code>cid0.idt</code> (5 097 entries) + <code>cid1.idt</code> (2 722 entries). Namco-Blowfish (LE-swap), key <code>"idtable text"</code>.</li>
+  <li><strong>ICND</strong> — icon registry. 3 125 authored 64×64 icons across 34 categories.</li>
+  <li><strong>TDAB</strong> — battle-action database. 1 668 actions × 6 779 parts of frame-track data. Built on Namco's <code>Sys_CChunkFile.cpp</code> typed-stream serializer.</li>
+  <li><strong>CRSD</strong> — character/asset registry. 460 entity rows (id, name, atd, cpd, type). Per-record Blowfish, key <code>"crs text"</code>.</li>
+  <li><strong>NNTB</strong> — resource-alias map. 290 entries; the 5 non-identity aliases declare zone-mark bundle sharing. Per-record Blowfish, key <code>"nntable text"</code>.</li>
+  <li><strong>ATDT / PKDF / CPDT</strong> — content-hash manifest family (990 files); structural shape decoded, contents are integrity manifests not gameplay data.</li>
+  <li><strong>Sys_CChunkFile</strong> — the chunk-stream library itself, now available as a generic Python reader (<code>cchunkfile.py</code>).</li>
+</ul>
+
+<h2>Method notes</h2>
+<p>Static analysis leveraged the Namco engine's verbose assertion strings: every <code>Source/Sys_*.cpp</code> path leaks a library name. Decompiler output, disassembly, and corpus-wide validation were combined to recover container headers, record layouts, pointer relocation rules, compression paths, and encrypted table structures. Runtime probing was used only where static structure was not enough to explain protocol behavior.</p>
+
+<h2>Legal</h2>
+<p class="muted">Asset binaries (texture data, audio, copyrighted content) are <strong>not redistributed</strong>. This archive consists of:</p>
+<ul class="muted">
+  <li>Reverse-engineered file-format documentation and decoders</li>
+  <li>Derived data tables (symbolic IDs, action timing schemas, vocabulary lists, asset registries)</li>
+  <li>Icons and minimaps rendered from the user's locally-extracted client copy at build time</li>
+</ul>
+<p class="muted">Run <code>python3 build_wiki.py</code> against your own copy of the client to populate the visual assets. Tales of Eternia Online © Namco Bandai 2003–2007 / ISAO Corporation.</p>
+
+    <footer class="site">
+      <p>Reverse-engineered asset archive of <em>Tales of Eternia Online</em> (Namco / Sigma, 2003-2007). Static structural data extracted from the recovered client; no copyrighted asset binaries are redistributed here. Numeric gameplay values (HP, levels, drops, XP) have not been confirmed in the recovered client corpus and were likely server-authoritative.</p>
+      <p class="small muted">Generated by <code>build_wiki.py</code> · 7 container formats decoded: BNKD · IDTB · ICND · TDAB · CRSD · NNTB · ATDT/PKDF/CPDT</p>
+    </footer>
+  </main>
+</div>
+<div class="palette-backdrop" id="paletteBackdrop" hidden onclick="closePalette()"></div>
+<section class="command-palette" id="commandPalette" hidden aria-label="Archive search">
+  <div class="palette-panel">
+    <div class="palette-field">
+      <span class="palette-icon">⌕</span>
+      <input id="paletteInput" type="search" placeholder="Search current page and archive sections..." autocomplete="off" oninput="paletteSearch(this.value)">
+      <button type="button" onclick="closePalette()" aria-label="Close search">Esc</button>
+    </div>
+    <div class="palette-results" id="paletteResults"></div>
+  </div>
+</section>
+<div class="image-viewer" id="imageViewer" hidden onclick="closeImageViewer()">
+  <figure class="image-viewer-panel" onclick="event.stopPropagation()">
+    <button class="image-viewer-close" type="button" onclick="closeImageViewer()" aria-label="Close image preview">Esc</button>
+    <img id="imageViewerImg" alt="">
+    <figcaption id="imageViewerCaption"></figcaption>
+  </figure>
+</div>
+<script>
+const archiveLinks = [{"href": "./index.html", "label": "Home"}, {"href": "./equipment/index.html", "label": "Equipment"}, {"href": "./beasts/index.html", "label": "Beasts"}, {"href": "./npcs/index.html", "label": "NPCs"}, {"href": "./actions/index.html", "label": "Battle Actions"}, {"href": "./zones/index.html", "label": "Zones"}, {"href": "./audio/index.html", "label": "Audio"}, {"href": "./bundles/index.html", "label": "Bundles"}, {"href": "./about.html", "label": "About"}];
+
+function globalSearch(q) {
+  q = q.trim().toLowerCase();
+  const targets = document.querySelectorAll('[data-search], [data-name], [data-id]');
+  for (const t of targets) {
+    const haystack = (t.dataset.search || t.dataset.name || '' + (t.dataset.id || '') || t.textContent || '').toLowerCase();
+    t.style.display = (!q || haystack.includes(q)) ? '' : 'none';
+  }
+}
+
+function openPalette() {
+  document.getElementById('paletteBackdrop').hidden = false;
+  document.getElementById('commandPalette').hidden = false;
+  const input = document.getElementById('paletteInput');
+  input.value = '';
+  paletteSearch('');
+  input.focus();
+}
+
+function closePalette() {
+  document.getElementById('paletteBackdrop').hidden = true;
+  document.getElementById('commandPalette').hidden = true;
+}
+
+function paletteSearch(q) {
+  q = q.trim().toLowerCase();
+  globalSearch(q);
+  const pageItems = Array.from(document.querySelectorAll('.cat-card, .npc-card, .icon-cell, .action-card, .zone-card, .audio-cell'))
+    .map((el) => {
+      const title = (el.querySelector('.name, .npc-name, .id, .zone-id, .a-name') || el).textContent.trim();
+      const meta = (el.querySelector('.meta, .npc-id, .zone-group, .a-sub') || { textContent: '' }).textContent.trim();
+      const text = (el.dataset.search || el.dataset.name || el.textContent || '').trim();
+      return { title, meta, text };
+    })
+    .filter((item) => !q || item.text.toLowerCase().includes(q))
+    .slice(0, 6);
+  const linkItems = archiveLinks
+    .filter((item) => !q || item.label.toLowerCase().includes(q))
+    .map((item) => `<a class="palette-result" href="${item.href}"><span>${item.label}</span><small>Archive section</small></a>`);
+  const localItems = pageItems
+    .map((item) => `<button class="palette-result" type="button" onclick="closePalette()"><span>${item.title}</span><small>${item.meta || 'Current page match'}</small></button>`);
+  document.getElementById('paletteResults').innerHTML = [...linkItems, ...localItems].join('') || '<div class="palette-empty">No matches in this page.</div>';
+}
+
+function openImageViewer(img) {
+  const viewer = document.getElementById('imageViewer');
+  const viewerImg = document.getElementById('imageViewerImg');
+  const caption = document.getElementById('imageViewerCaption');
+  const cell = img.closest('.icon-cell, .npc-card');
+  const label = cell ? (cell.querySelector('.name, .npc-name, .id') || cell).textContent.trim() : (img.alt || 'Asset preview');
+  const source = cell ? cell.querySelector('.asset-source')?.textContent.trim() : '';
+  viewerImg.src = img.currentSrc || img.src;
+  viewerImg.alt = img.alt || label;
+  caption.textContent = source ? `${label} · ${source}` : label;
+  viewer.hidden = false;
+  document.body.classList.add('viewer-open');
+}
+
+function closeImageViewer() {
+  const viewer = document.getElementById('imageViewer');
+  const viewerImg = document.getElementById('imageViewerImg');
+  viewer.hidden = true;
+  viewerImg.removeAttribute('src');
+  document.body.classList.remove('viewer-open');
+}
+
+document.addEventListener('click', (ev) => {
+  const img = ev.target.closest('.icon-cell img, .npc-card img');
+  if (!img || !img.getAttribute('src')) return;
+  ev.preventDefault();
+  openImageViewer(img);
+});
+
+document.addEventListener('keydown', (ev) => {
+  if ((ev.ctrlKey || ev.metaKey) && ev.key.toLowerCase() === 'k') {
+    ev.preventDefault();
+    openPalette();
+  }
+  if (ev.key === 'Escape') {
+    closePalette();
+    closeImageViewer();
+  }
+});
+</script>
+</body>
+</html>
